@@ -46,9 +46,12 @@ body {
 }
 
 button {
-    margin: 20px;
+    margin: 15px;
 }
 
-#analysis{
-    font-size: 12px;
+
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
