@@ -285,3 +285,7 @@ html, body {
 button{
     margin: 20px;
 }
+
+#analysis{
+    font-size: 12px;
+}
