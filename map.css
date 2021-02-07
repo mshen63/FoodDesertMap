@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta Stencil");
+
+*{
+    font-family: 'Allerta Stencil'
+}  
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+}
+
+#mapparts {
+    width: 1000px;
+    height: 800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#info{
+    width: 800px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    width: 80%;
+    height: 70%;
+    margin-left: 20px;
+}
+
+
+
+#key {
+    width: 90%;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+    height: 900px;
+    width: 2000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    text-align: center;
+    display: none;
+}
+
+.color-key {
+    background: linear-gradient( to right, hsl(232, 50%, 55%), hsl(171, 99%, 40%));
+    margin: 5px 0 0 0;
+    font-size: 1em;
+    line-height: 1em;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+#bar {
+    display: flex;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#data-caret {
+    margin-left: -10px;
+    font-size: 25px;
+    width: 14px;
+}
+
+#max {
+    margin: 5px 0 0 12px;
+}
+
+#min {
+    margin: 5px 10px 0 0
+
+}
+
+#marker {
+    width: 2.5em;
+    height: 10px;
+    border-bottom: 1px solid white;
+    -webkit-transform: translateX(208px) rotate(90deg);
+    position: absolute;
+}
+
+#pie1,#pie2 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+
+}
+
+#charts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    display: none;
+}
+
+
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#target {
+    width: 345px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.tabs {
+    padding: 0px;
+    list-style: none;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tabs div {
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/*#donate_tab {
+    display: none;
+}
+
+#discourse_tab {
+    display: none;
+
+}*/
+
+
+
+#impact{
+    color: #fff;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message{
+    font-size: 15px;
+
+}
+
+#pie_key{
+    display: none;
+}
+
+#introd{
+    text-decoration: underline;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+Í
+#tabs{
+    width: 80%
+}
+
+#intro{
+    text-align: center;
+}
+#one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 20px;
+}

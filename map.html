@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mapping Health</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArTMgYY6vNCezh4fvc6IGQ7OjBxIHVo5M&callback=initMap&libraries=places&v=weekly"
+    defer></script>
+  <link rel="stylesheet" href="map.css">
+  <script src="map.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <h1></h1>
+
+
+  </div>
+  <div id="main">
+
+    <div id="mapparts">
+      <div id="search">
+
+        <input id="pac-input" class="controls" type="text" placeholder="Search Location" />
+      </div>
+
+
+      <h1>% of US County Populations in Low Access Zones</h1>
+      <div id="map"></div>
+
+
+      <div id="bar">
+        <p id="min"></p>
+        <div class="color-key">
+          <span id="marker"></span>
+          <span id="data-caret">🍟</span>
+        </div>
+        <p id="max"></p>
+      </div>
+
+    </div>
+    <div id="right">
+      <div class="wrapper" id="tabs">
+        <nav class="tabs">
+          <div id="introd">About the Map</div>
+          <div id="details">Data</div>
+          <!--- <div id="donate">Donate</div>
+        <div id="discourse">Discourse</div>-->
+        </nav>
+      </div>
+
+
+      <div id="info">
+
+
+
+
+
+        <div id="intro">
+          <p>Welcome to the Food Myap! </p>
+          <p>This map displays the % of each county's population that is considered to have low access to nutritious
+            foods. </p>
+          <p>- Hover over areas to see data pop up on the Data tab, and click a county to see an updated pie chart with
+            %
+            population living in low access areas broken down by race.</p>
+          <p> - Check the nutrition bar at the bottom to see information on the percent of the population living in a
+            low access
+            location. The white bar represents when 33% of the county population lives in a low access area: the point
+            at which a location officially qualifies as a food desert.
+          </p>
+          <p> - Click Shop Mode to place a marker on the map, and see the impact it can make on a low access community.
+            The corresponding colors, data, and the nutrition bar at the bottom will
+            adjust to each marker so you can see the impact in real time!</p>
+
+          <p> - You can toggle the markers on and off and delete them when you're done.</p>
+          <p> - Find data from a specific location by entering the address into the search location bar. </p>
+          <p>You can use this tool to figure out where to plan a supermarket, farmer's market, or just to play around
+            with the data!</p>
+
+          <p>The data for this map was taken from the <a
+              href="https://www.ers.usda.gov/data-products/food-access-research-atlas/">US Census Bureau</a>.</p>
+          <p></p>
+        </div>
+
+        <div id="basic">
+          <p id="state"></p>
+          <p id="county"></p>
+          <p id="population"></p>
+          <p id="la_score"></p>
+          <p id="impact">Hello</p>
+        </div>
+
+        <hr>
+
+        <div id="charts">
+          <canvas id="pie1"></canvas>
+          <canvas id="pie2"></canvas>
+
+        </div>
+        <img src="key.png" id="pie_key"></img>
+
+        <!-- <div id="donate_tab">
+        <p>Food Pantries Here</p>
+      </div>
+
+      <div id="discourse_tab">
+        <p>Contact Officials Here</p>
+      </div>-->
+
+      </div>
+    </div>
+
+  </div>
+  <button><a href="home.html">Home</a></button>
+</body>
+
+</html>
