@@ -22,8 +22,8 @@
 }
 
 #mapparts {
-    width: 1000px;
-    height: 800px;
+    width: 50%;
+    height: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -31,18 +31,18 @@
 }
 
 #info{
-    width: 800px;
-    height: 550px;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 25px;
 }
 
 #map {
     width: 80%;
     height: 70%;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 
@@ -56,7 +56,7 @@
 
 html, body {
     height: 900px;
-    width: 2000px;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -118,7 +118,7 @@ html, body {
 }
 
 #pie1,#pie2 {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-bottom: 10px;
 
 }
@@ -266,6 +266,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 Í
 #tabs{
@@ -286,6 +287,10 @@ button{
     margin: 20px;
 }
 
-#analysis{
-    font-size: 12px;
+
+
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
